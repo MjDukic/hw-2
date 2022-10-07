@@ -7,9 +7,13 @@ body {
 
 p {
     font-size: 18px;
-
 }
 
+a {
+    text-decoration: none;
+    color: black;
+ }
+ /*for anchor tags*/
 
 header {
     background-color: tan;
@@ -47,7 +51,6 @@ nav a {
 }
 /*targeting the three brands so they coordinate with main header/my name, using text-decortation so that they do not have the line underneath anymore*/
 .aboutMe {
-    /* font-size: 1.3rem; */
     padding: 20px;
  }
 /*seperated aboutme so that it can be centered, realized possibly dont need font-size*/
@@ -72,10 +75,31 @@ nav a {
 
 .myWork {
     margin-bottom: 20px;
-    padding: 25px;
-    /* background-color: #738678; */
     color: black;
     font-family: Times, Times New Roman, serif;
+    display: flex;
+    min-height: 170px;
+    min-width: 33%;
+ }
+
+ .projectLink {
+    display: flex;
+    align-items: flex-end;
+    font-size: 33px;
+    font-weight: bold;
+    padding: 25px;
+    min-width:100%;
+ }
+ /*targeting the 3 anchortags */
+
+ .main {
+    min-height: 150px;
+ }
+ /*targeting the weatherapp*/
+
+ .projectMain {
+    flex-basis:100%;
+    min-height: 150px;
  }
  /*seperating each work box and adding color/font*/
 
@@ -85,6 +109,12 @@ nav a {
     justify-content: space-between;
     padding: 0 40px;
  }
+
+ .workContainer a:hover {
+    background: rgba(202, 202, 137, 0.3);
+ }
+
+ /*rgba takes in four perameters and that is red, green, blue and opacity*/
  
 .workContainer section {
     flex: 0 1 28%;
@@ -97,6 +127,7 @@ nav a {
     background-size: cover;
     background-repeat: no-repeat;
  }
+/*flex-basis makes weatherapp take up the top row and forces the other three to go under it */
 
 #calculator {
     background-image: url("../images/calculator.jpg");
@@ -104,6 +135,8 @@ nav a {
     background-repeat: no-repeat;
     background-position: center center;
  }
+/*background position, positions the image to be in the middle, or where desired.. helped calculator be in middle*/
+
 #design {
     background-image: url("../images/design.jpg");
     background-size: cover;
@@ -117,6 +150,7 @@ nav a {
     background-position: center center;
  }
 
+ /*all id's are to organize the work section, weatherapp goes up top and other three go under evenly.*/
 footer {
     width: 100%;
     padding: 10px;
@@ -124,15 +158,18 @@ footer {
     background-color: tan;
   } 
 
-
 /* @media screen and (max-width: 992px) {
     main {
         width: 47%;
     }
-}
+    a {
+
+    }
+    section:
+} 
 
 @media screen and (max-width: 576px) {
     main {
         width: 96%;
     }
-} */
+}  */
