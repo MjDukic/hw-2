@@ -9,31 +9,34 @@
  </head>
 
  <body>
+
     <header>
        <div class="brand">Mirjana Dukic</div> 
     <nav>
         <ul>
             <li>
-                <a href="about.html">About Me</a>
+                <a href="#about">About Me</a>
             </li>
             <li>
-                <a href="index.html">Work</a>
+                <a href="#work">Work</a>
             </li>
             <li>
-                <a href="contact.html">Contact Me</a>
+                <a href="#contact">Contact Me</a>
             </li>
         </ul>
     </nav>
 </header>
-
+<!--targeted for links going to corresponding section-->
+ 
 <main>
-    <section class="aboutMe">
+    <section class="aboutMe" id="about">
         <p><img src="./assets/images/recentphoto.jpg" alt="recent photo" width="180" height="160" class="float-left"></p>
         <h1>About Me</h1>
         <p>I recently graduated from UC Davis in June of 2022, I recieved a BA of Psychology and about a month before the commencement ceremony I was really thinking about what the next steps were. When I first started college, at Foothill College, my inital major was Computer Science. However, I quickly became intimidated by it even though I have always enjoyed technology and learning about coding. I thought about this a lot and now it has pushed me to pursue this full stack coding bootcamp.   </p>
     </section>
 
 </main>
+<!-- main bc aboutme goes at the top, image width and height adjusted to fit smaller to screen-->
 
 <section class="work">
     <h2>Work</h2>
@@ -45,21 +48,28 @@
         <h2>Calculator</h2>
         <img src="./assets/images/calculator.jpg" class="float-right" alt="calculator img" />
     </section>
-    <section class="myWork" id="Design">
+    <section class="myWork" id="design">
         <h2>Design</h2>
         <img src="./assets/images/design.jpg" class="float-right" alt="design img" />
     </section>
-    <section class="myWork" id="Web">
+    <section class="myWork" id="web">
         <h2>Web</h2>
         <img src="./assets/images/web.jpg" class="float-right" alt="web img" />
     </section>
 </section>
 
+<!--section bc it is the work section of page, created class and id for each section so that can generalize in css or specific in css when needed-->
+
 
 
 <footer>
-    <h3> Made with ♥️ by MJ</h3>
+    <section class="contactMe" id= "contact">
+    <h3> Contact Me</h3>
+    <p> email: mirjanadukicc@gmail.com</p>
+    <h5> made with ♥️ by Mirjana Dukic</h5>
+    </section>
 </footer>
+<!-- h3 and h5 so that they are diff sizes/fonts and added h5 for special touch-->
 
  </body>
 

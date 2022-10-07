@@ -3,10 +3,14 @@ body {
     padding: 0;
     background-color: antiquewhite;
   }
+  /*targeting the body of the portfolio, margin and padding so that it fits entire screen*/
 
 p {
     font-size: 18px;
+
 }
+
+
 header {
     background-color: tan;
     color: black;
@@ -16,12 +20,14 @@ header {
     justify-content: space-between;
     font-family: Times, Times New Roman, serif;
 }
+/*main header, width and padding for a nicer/thicker border, justify-content so that the three brands within header move right*/
 
 header .brand {
     font-size: 2.5rem;
     font-weight: bold;
     font-family: Palatino, URW Palladio L, serif
 }
+/*targeting specifically the three brands with a different font and size*/
 
 nav ul {
     font-weight: bold;
@@ -31,6 +37,7 @@ nav ul {
     display: flex;
     padding: 10px;
 }
+/* list-style is for that we do not have bullet points anymore. need margin and padding again so that it does not increase size of header border, display flex is to have the next to one another */
 
 nav a {
     color: black;
@@ -38,41 +45,63 @@ nav a {
     font-size: 1.3rem;
     text-decoration: none;
 }
-
+/*targeting the three brands so they coordinate with main header/my name, using text-decortation so that they do not have the line underneath anymore*/
 .aboutMe {
-    font-size: 1.3rem;
+    /* font-size: 1.3rem; */
     padding: 20px;
  }
+/*seperated aboutme so that it can be centered, realized possibly dont need font-size*/
 
 .aboutMe h1 {
     margin-bottom: 20px;
     font-size: 36px;
 }
+/* for aboutme header specifically*/
 
- .float-left {
+.float-left {
     float: left;
     margin-right: 25px;
 }
+/*created class for aboutme, so that paragraph and header go to the right of the image*/
 
- .work {
+.work {
     font-size: 1.3rem;
     padding: 20px;
  }
+ /*font for work header, padding to line up with rest of site*/
 
  .myWork {
-        margin-bottom: 20px;
-        padding: 25px;
-        height: 300px;
-        background-color: olive;
-        color: black;
-        font-family: Times, Times New Roman, serif;
-        display: flex;
+    margin-bottom: 20px;
+    padding: 25px;
+    /* height: 300px; */
+    background-color: #738678;
+    color: black;
+    font-family: Times, Times New Roman, serif;
  }
-   
+ /*seperating each work box and adding color/font*/
+
+ /* .myWork h2 {
+    display: flex;
+    /* align-content: flex-start; 
+ } */ /*thought it was needed.. may really not be*/
+ 
  
   footer {
     width: 100%;
-    padding: 15px;
+    padding: 10px;
     text-align: center;
     background-color: tan;
-  }
+  } 
+
+
+/* @media screen and (max-width: 992px) {
+    main section {
+        width: 47%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    main section {
+        width: 96%;
+    }
+} */
