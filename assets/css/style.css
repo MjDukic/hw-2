@@ -70,23 +70,54 @@ nav a {
  }
  /*font for work header, padding to line up with rest of site*/
 
- .myWork {
+.myWork {
     margin-bottom: 20px;
     padding: 25px;
-    /* height: 300px; */
-    background-color: #738678;
+    /* background-color: #738678; */
     color: black;
     font-family: Times, Times New Roman, serif;
  }
  /*seperating each work box and adding color/font*/
 
- /* .myWork h2 {
+.workContainer {
     display: flex;
-    /* align-content: flex-start; 
- } */ /*thought it was needed.. may really not be*/
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 40px;
+ }
  
- 
-  footer {
+.workContainer section {
+    flex: 0 1 28%;
+ }
+
+#weatherApp {
+    flex-grow: 3;
+    flex-basis: 100%;
+    background-image: url("../images/weather.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+
+#calculator {
+    background-image: url("../images/calculator.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+ }
+#design {
+    background-image: url("../images/design.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+
+#web {
+    background-image: url("../images/web.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+ }
+
+footer {
     width: 100%;
     padding: 10px;
     text-align: center;
@@ -95,13 +126,13 @@ nav a {
 
 
 /* @media screen and (max-width: 992px) {
-    main section {
+    main {
         width: 47%;
     }
 }
 
 @media screen and (max-width: 576px) {
-    main section {
+    main {
         width: 96%;
     }
 } */
