@@ -123,7 +123,7 @@ nav a {
 #weatherApp {
     flex-grow: 3;
     flex-basis: 100%;
-    background-image: url("../images/weather.jpg");
+    background-image: url("../images/movieReview.png");
     background-size: cover;
     background-repeat: no-repeat;
  }
